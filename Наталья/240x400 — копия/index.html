@@ -7,22 +7,9 @@
       href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
       rel="stylesheet"
     />
-    <script>
-      var clickTag = "%link1%";
-    </script>
-    <script>
-      var tgt = "%banner.target%";
-    </script>
-    <style>
-      body {
-        margin: 0;
-      }
-    </style>
-
-
-
-    <script src="./lib/anime.min.js"></script>
-    <link rel="stylesheet" href="./styles.min.css" />
+    <style>body{margin:0}</style>
+    <script src="./lib/anime.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <a id="click_area" href="#" target="_blank">
@@ -101,11 +88,9 @@
       </div>
     </a>
     <script>
-      document.getElementById("click_area").addEventListener("click", fl_ClickToGoToWebPage);
-      function fl_ClickToGoToWebPage() {
-        window.open(clickTag, "_blank");
-      }
+      document.getElementById("click_area").href =
+        yandexHTML5BannerApi.getClickURLNum(1);
     </script>
-    <script src="./main.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
