@@ -1,0 +1,122 @@
+.container {
+  position: relative;
+  /* change width and height */
+  width: 240px;
+  height: 600px;
+}
+#age {
+  position: absolute;
+  /* change position */
+  top: 13px;
+  right: 13px;
+
+  /* change font style */
+  color: #fff;
+  text-align: right;
+  font-family: "Proxima Nova Condensed";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#text-box {
+  position: absolute;
+  bottom: 40px;
+  left: 16px;
+  width: 208px;
+
+  color: #FFF;
+  font-family: "Proxima Nova Condensed";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 14.16px */
+}
+#logo {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.main-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 36px;
+  left: 16px;
+  width: 214.15px;
+}
+
+/* Работа в паре кликов */
+.main-content-title {
+  color: #fff;
+  font-family: "Proxima Nova Condensed";
+  font-size: 36.067px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%; /* 32.461px */
+  margin-bottom: 14px;
+}
+
+.notification {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.notification-content {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.notification-logo {
+  display: flex;
+}
+
+.notification-text {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* hh работа */
+.notification-title {
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter";
+  font-size: 9.329px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 10.916px; /* 117.014% */
+  letter-spacing: -0.218px;
+}
+
+/* только что */
+.notification-time {
+  font-family: "Inter";
+  color: rgba(127, 127, 127, 0.5);
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 8.283px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10.916px; /* 131.788% */
+}
+
+/* Вас приглашают на вакансию */
+.notification-desc {
+  font-family: "Inter";
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 9.329px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10.916px; /* 117.014% */
+  letter-spacing: -0.218px;
+}
