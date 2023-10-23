@@ -1,5 +1,6 @@
 var tb = document.getElementById("text-box");
-var nb = document.getElementById("notif-box");
+var notification = document.getElementsByClassName("notification");
+var mainContentTitle = document.getElementsByClassName("main-content-title");
 
 function animateRectangle() {
   return new Promise((resolve) => {
@@ -7,54 +8,75 @@ function animateRectangle() {
       opacity: 0,
     });
 
-    anime.set(nb, {
+    anime.set(notification, {
       opacity: 0,
     });
 
-    var nb_prop = {
-      targets: nb,
-      opacity: 1,
-      easing: "easeInOutQuad",
-      duration: 100,
-      delay: 900,
-    };
-
-    var dnb_prop = {
-      targets: nb,
+    anime.set(mainContentTitle, {
       opacity: 0,
-      easing: "easeInOutQuad",
-      duration: 100,
-      delay: 2500,
-    };
+    });
 
-    var tb_prop = {
-      targets: tb,
+    var notificationprop = {
+      targets: notification,
       opacity: 1,
       easing: "easeInOutQuad",
-      duration: 100,
+      duration: 1000,
       delay: 100,
     };
 
-    var dtb_prop = {
+    var dnotificationprop = {
+      targets: notification,
+      opacity: 0,
+      easing: "easeInOutQuad",
+      duration: 300,
+      delay: 2500,
+    };
+
+    var mainContentTitleprop = {
+      targets: mainContentTitle,
+      opacity: 1,
+      easing: "easeInOutQuad",
+      duration: 1000,
+      delay: 900,
+    };
+
+    var dmainContentTitleprop = {
+      targets: mainContentTitle,
+      opacity: 0,
+      easing: "easeInOutQuad",
+      duration: 300,
+      delay: 2500,
+    };
+
+    var tbprop = {
+      targets: tb,
+      opacity: 1,
+      easing: "easeInOutQuad",
+      duration: 200,
+      delay: 200,
+    };
+
+    var dtbprop = {
       targets: tb,
       opacity: 0,
       easing: "easeInOutQuad",
-      duration: 100,
-      delay: 1500,
+      duration: 300,
+      delay: 2500,
     };
 
-    anime(nb_prop).finished.then(() => {
-      anime(dnb_prop).finished.then(() => {
-        anime(tb_prop).finished.then(() => {
-          anime(dtb_prop).finished.then(() => {})
-          setTimeout(() => {
-            resolve();
-          }, 1500);
-        })
-      })
-    })
+    anime(mainContentTitleprop).finished.then(() => {
+      anime(dmainContentTitleprop).finished.then(() => {
+        anime(tbprop).finished.then(() => {
+          anime(dtbprop).finished.then(() => {});
+        });
+        setTimeout(() => {
+          resolve();
+        }, 2500);
+      });
+    });
   });
 }
+
 
 function animateLoop() {
   animateRectangle().then(() => {
