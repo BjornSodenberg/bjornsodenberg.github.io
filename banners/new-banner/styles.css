@@ -106,13 +106,8 @@ p {
     transform: scale(100%);
   }
 
-  15% {
-    opacity: 1;
-    transform: scale(100%);
-  }
-
-  37%,
-  60% {
+  15%,
+  70% {
     opacity: 1;
     transform: scale(142%);
   }
@@ -163,27 +158,23 @@ p {
 }
 
 .vac1 {
-  animation-duration: 7s;
-
-  animation-name: scrollTop;
-
-  animation-fill-mode: forwards;
+  transform: translateY(-18%);
 }
 
 #bg {
-  animation-duration: 4.5s;
+  animation-duration: 8s;
 
   animation-name: brightness;
-  animation-delay: 1.5s;
+  animation-delay: .5s;
   animation-fill-mode: forwards;
 }
 
 #card {
-  animation-duration: 4.5s;
+  animation-duration: 8s;
 
   animation-name: scaleCard;
   animation-fill-mode: forwards;
-  animation-delay: 1.5s;
+  animation-delay: .5s;
 }
 
 .info {
