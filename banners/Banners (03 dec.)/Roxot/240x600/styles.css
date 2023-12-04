@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+span,
+p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Proxima Nova Condensed";
+}
+
+.container {
+  position: relative;
+  width: 240px;
+  height: 600px;
+  background-color: #d6001c;
+  overflow: hidden;
+}
+
+.text {
+  width: 200px;
+  position: absolute;
+  top: 95px;
+  left: 21px;
+}
+
+.text span {
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 95%; /* 43.7px */
+}
+
+.info {
+  position: absolute;
+
+  top: 105px;
+  left: 21px;
+}
+
+.info p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#age {
+  top: 29px;
+  right: 20px;
+  position: absolute;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#logo {
+  position: absolute;
+  top: 33px;
+  left: 22px;
+}
+
+#card {
+  opacity: 0;
+  position: absolute;
+  left: 2px;
+  margin: 0 auto;
+  right: 0;
+  top: 104.6px;
+}
+
+.animation-container {
+  position: absolute;
+  right: 29px;
+  bottom: 0px;
+  width: 189px;
+  height: 300px;
+}
+
+@keyframes scrollTop {
+  0% {
+    transform: translateY(0%);
+  }
+
+  20%,
+  80% {
+    transform: translateY(-18%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes scaleCard {
+  0% {
+    opacity: 1;
+    transform: scale(100%);
+  }
+
+  10%,
+  70% {
+    opacity: 1;
+    transform: scale(142%);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(100%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(100%);
+  }
+}
+
+@keyframes brightness {
+  0% {
+    filter: brightness(100%);
+  }
+
+  20%,
+  80% {
+    filter: brightness(80%);
+  }
+
+  100% {
+    filter: brightness(100%);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  20%,
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.vac1 {
+  transform: translateY(0%);
+}
+
+#bg {
+  animation-duration: 8s;
+
+  animation-name: brightness;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#card {
+  animation-duration: 8s;
+  animation-name: scaleCard;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+.info {
+  opacity: 0;
+  animation-duration: 4s;
+
+  animation-name: opacity;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+.text {
+  opacity: 0;
+  animation-duration: 3.7s;
+
+  animation-name: opacity;
+  animation-fill-mode: forwards;
+}

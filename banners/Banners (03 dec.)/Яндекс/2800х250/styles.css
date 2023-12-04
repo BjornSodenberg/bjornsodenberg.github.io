@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+span,
+p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Proxima Nova Condensed";
+}
+
+.content-wrapper {
+  position: relative;
+  width: 1299px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 2800px;
+  height: 250px;
+  background-color: #d6001c;
+  overflow: hidden;
+}
+
+.text {
+  width: 647.685px;
+  position: absolute;
+  top: 40px;
+  left: 180px;
+}
+
+.text span {
+  font-size: 100.981px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%; /* 90.883px */
+}
+
+.info {
+  width: 645.32px;
+  position: absolute;
+
+  top: 40px;
+  left: 180px;
+}
+
+.info p {
+  font-size: 27.02px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110.5%; /* 29.857px */
+}
+
+#age {
+  top: 23px;
+  right: 0;
+  position: absolute;
+
+  font-size: 37.359px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#logo {
+  position: absolute;
+  top: 40px;
+}
+
+#card {
+  opacity: 0;
+  position: absolute;
+  left: 2px;
+  margin: 0 auto;
+  right: -3px;
+  top: 88px;
+}
+
+.animation-container {
+  position: absolute;
+  width: 262.31px;
+  height: 539.26;
+
+  right: 89px;
+  top: 7px;
+}
+
+
+@keyframes scrollTop {
+  0% {
+    transform: translateY(0%);
+  }
+
+  20%,
+  80% {
+    transform: translateY(-18%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes scaleCard {
+  0% {
+    opacity: 1;
+    top: 104px;
+    transform: scale(100%);
+  }
+
+  10%,
+  70% {
+    opacity: 1;
+    top: 88px;
+    transform: scale(142%);
+  }
+
+  80% {
+    opacity: 1;
+    top: 104px;
+    transform: scale(100%);
+  }
+
+  100% {
+    opacity: 0;
+    top: 104px;
+    transform: scale(100%);
+  }
+}
+
+@keyframes brightness {
+  0% {
+    filter: brightness(100%);
+  }
+
+  20%,
+  80% {
+    filter: brightness(80%);
+  }
+
+  100% {
+    filter: brightness(100%);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  20%,
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.vac1 {
+  transform: translateY(-18%);
+}
+
+#bg {
+  animation-duration: 8s;
+
+  animation-name: brightness;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
+
+#card {
+  animation-duration: 8s;
+
+  animation-name: scaleCard;
+  animation-fill-mode: forwards;
+  animation-delay: .5s;
+}
+
+.info {
+  opacity: 0;
+  animation-duration: 4s;
+
+  animation-name: opacity;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+.text {
+  opacity: 0;
+  animation-duration: 3.7s;
+
+  animation-name: opacity;
+  animation-fill-mode: forwards;
+}
