@@ -18,40 +18,41 @@
 }
 #text-box {
   position: absolute;
-  bottom: 20px;
-  left: 10px;
-  width: 229px;
+  bottom: 35px;
+  left: 15px;
+  width: 161px;
   color: #fff;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 0 4px rgba(0, 0, 0, 0.25),
     0 1px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Proxima Nova Condensed";
+  font-family: Proxima Nova Condensed;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 #logo {
   position: absolute;
   top: 15px;
-  left: 15px;
+  right: 15px;
 }
 #box-name {
   position: absolute;
-  bottom: 13px;
-  left: 21px;
+  bottom: 20px;
+  left: 28px;
   color: #fff;
 
   font-family: "Proxima Nova Condensed";
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 600;
-  line-height: 9px;
+  line-height: 14px;
   letter-spacing: 0.01em;
   text-align: left;
 }
 #box-text {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 11px;
+  left: 17px;
   color: #fff;
 
   font-family: "Proxima Nova Condensed";
@@ -63,8 +64,8 @@
 }
 
 .wrapper {
-  width: 160px; /* Ширина прямоугольника */
-  height: 70px; /* Высота прямоугольника */
+  width: 154px; /* Ширина прямоугольника */
+  height: 146px; /* Высота прямоугольника */
   position: absolute;
   bottom: 15px;
   left: 15px;

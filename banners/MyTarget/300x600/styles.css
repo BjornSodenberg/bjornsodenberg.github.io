@@ -18,9 +18,9 @@
 }
 #text-box {
   position: absolute;
-  bottom: 59px;
-  left: 19px;
-  width: 259px;
+  bottom: 52px;
+  left: 41px;
+  width: 231px;
   color: #fff;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 0 4px rgba(0, 0, 0, 0.25),
     0 1px 4px rgba(0, 0, 0, 0.25);
@@ -39,27 +39,27 @@
 }
 #box-name {
   position: absolute;
-  bottom: 22px;
-  left: 36px;
+  bottom: 20px;
+  left: 52px;
   color: #fff;
 
   font-family: "Proxima Nova Condensed";
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 15px;
+  line-height: 23px;
   letter-spacing: 0.01em;
   text-align: left;
 }
 #box-text {
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 23px;
+  left: 23px;
   color: #fff;
 }
 
 .wrapper {
-  width: 268px; /* Ширина прямоугольника */
-  height: 118px; /* Высота прямоугольника */
+  width: 246px; /* Ширина прямоугольника */
+  height: 232px; /* Высота прямоугольника */
   position: absolute;
   bottom: 50px;
   left: 15px;

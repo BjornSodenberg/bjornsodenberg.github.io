@@ -20,7 +20,7 @@
   position: absolute;
   bottom: 82px;
   left: 40px;
-  width: 440px;
+  width: 457px;
   color: #fff;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 0 4px rgba(0, 0, 0, 0.25),
     0 1px 4px rgba(0, 0, 0, 0.25);
@@ -39,8 +39,8 @@
 }
 #box-name {
   position: absolute;
-  bottom: 35px;
-  left: 57px;
+  bottom: 30px;
+  left: 60px;
   color: #fff;
 
   font-family: "Proxima Nova Condensed";
@@ -52,24 +52,24 @@
 }
 #box-text {
   position: absolute;
-  top: 29px;
-  left: 25px;
+  top: 26px;
+  left: 27px;
   color: #fff;
 
   font-family: "Proxima Nova Condensed";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 15px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 30px;
   letter-spacing: 0.01em;
   text-align: left;
 }
 
 .wrapper {
-  width: 426px; /* Ширина прямоугольника */
-  height: 188.3px; /* Высота прямоугольника */
+  width: 466px; /* Ширина прямоугольника */
+  height: 202px; /* Высота прямоугольника */
   position: absolute;
-  bottom: 15px;
-  left: 125px;
+  bottom: 23px;
+  left: 24px;
 }
 
 #animated-box {

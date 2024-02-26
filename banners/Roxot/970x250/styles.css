@@ -9,16 +9,16 @@
   right: 40px;
 }
 .wrapper {
-  width: 433px; /* Ширина прямоугольника */
-  height: 191px; /* Высота прямоугольника */
+  width: 400px; /* Ширина прямоугольника */
+  height: 202px; /* Высота прямоугольника */
   position: absolute;
-  bottom: 29px;
-  left: 32px;
+  bottom: 24px;
+  left: 34px;
 }
 #box-text {
   position: absolute;
-  top: 26px;
-  left: 26px;
+  top: 32px;
+  left: 28px;
   color: #fff;
 }
 #box-name {
@@ -28,9 +28,9 @@
   color: #fff;
 
   font-family: "Proxima Nova Condensed";
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 23px;
   letter-spacing: 0.01em;
   text-align: left;
 }
@@ -50,17 +50,17 @@
 }
 #text-box {
   position: absolute;
-  bottom: 70px;
-  left: 32px;
-  width: 480px;
+  bottom: 36px;
+  left: 55px;
+  width: 417px;
   color: #fff;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 0 4px rgba(0, 0, 0, 0.25),
     0 1px 4px rgba(0, 0, 0, 0.25);
 
   font-family: "Proxima Nova Condensed";
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
 }

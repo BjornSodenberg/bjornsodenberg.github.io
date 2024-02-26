@@ -6,29 +6,29 @@
 #logo {
   position: absolute;
   top: 13px;
-  left: 13px;
+  right: 13px;
 }
 .wrapper {
-  width: 150px; /* Ширина прямоугольника */
-  height: 66px; /* Высота прямоугольника */
+  width: 156px; /* Ширина прямоугольника */
+  height: 72px; /* Высота прямоугольника */
   position: absolute;
-  bottom: 12px;
-  left: 54px;
+  bottom: 14px;
+  left: 19px;
 }
 #box-text {
   position: absolute;
-  top: 8px;
-  left: 9px;
+  top: 13px;
+  left: 12px;
   color: #fff;
 }
 #box-name {
   position: absolute;
-  bottom: 11px;
-  left: 20px;
+  bottom: 14px;
+  left: 23px;
   color: #fff;
 
   font-family: "Proxima Nova Condensed";
-  font-size: 7px;
+  font-size: 8px;
   font-weight: 600;
   line-height: 9px;
   letter-spacing: 0.01em;
@@ -50,9 +50,9 @@
 }
 #text-box {
   position: absolute;
-  bottom: 30px;
-  left: 53px;
-  width: 208px;
+  bottom: 32px;
+  left: 21px;
+  width: 140px;
   color: #fff;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 0 4px rgba(0, 0, 0, 0.25),
     0 1px 4px rgba(0, 0, 0, 0.25);

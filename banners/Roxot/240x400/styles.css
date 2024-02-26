@@ -9,11 +9,11 @@
   left: 20px;
 }
 .wrapper {
-  width: 208px; /* Ширина прямоугольника */
-  height: 91px; /* Высота прямоугольника */
+  width: 215px; /* Ширина прямоугольника */
+  height: 106px; /* Высота прямоугольника */
   position: absolute;
-  bottom: 60px;
-  left: 15px;
+  bottom: 30px;
+  left: 12px;
 }
 #box-text {
   position: absolute;
@@ -28,17 +28,17 @@
   color: #fff;
 
   font-family: "Proxima Nova Condensed";
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
-  line-height: 12px;
+  line-height: 14px;
   letter-spacing: 0.01em;
   text-align: left;
 }
 
 #age {
   position: absolute;
-  bottom: 20px;
-  right: 16px;
+  bottom: 8px;
+  right: 11px;
   color: #fff;
 
   font-family: "Proxima Nova Condensed";
@@ -50,17 +50,17 @@
 }
 #text-box {
   position: absolute;
-  bottom: 57px;
-  left: 15px;
-  width: 208px;
+  bottom: 52px;
+  left: 26px;
+  width: 158px;
   color: #fff;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 0 4px rgba(0, 0, 0, 0.25),
     0 1px 4px rgba(0, 0, 0, 0.25);
 
   font-family: "Proxima Nova Condensed";
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
-  line-height: 13px;
+  line-height: 11px;
   letter-spacing: 0em;
   text-align: left;
 }

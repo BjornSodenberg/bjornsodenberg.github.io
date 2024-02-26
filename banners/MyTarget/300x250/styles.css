@@ -5,8 +5,8 @@
 }
 #age {
   position: absolute;
-  bottom: 65px;
-  left: 24px;
+  bottom: 8px;
+  right: 9px;
   color: #fff;
 
   font-family: "Proxima Nova Condensed";
@@ -18,9 +18,9 @@
 }
 #text-box {
   position: absolute;
-  bottom: 44px;
-  left: 48px;
-  width: 222px;
+  bottom: 22px;
+  left: 27px;
+  width: 187px;
   color: #fff;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 0 4px rgba(0, 0, 0, 0.25),
     0 1px 4px rgba(0, 0, 0, 0.25);
@@ -39,7 +39,7 @@
 }
 #box-name {
   position: absolute;
-  bottom: 17px;
+  bottom: 13px;
   left: 29px;
   color: #fff;
 
@@ -52,17 +52,17 @@
 }
 #box-text {
   position: absolute;
-  top: 13px;
+  top: 12px;
   left: 13px;
   color: #fff;
 }
 
 .wrapper {
-  width: 218.98px; /* Ширина прямоугольника */
-  height: 94.72px; /* Высота прямоугольника */
+  width: 225px; /* Ширина прямоугольника */
+  height: 97px; /* Высота прямоугольника */
   position: absolute;
-  bottom: 26px;
-  left: 22px;
+  bottom: 16px;
+  left: 24px;
 }
 
 #animated-box {
@@ -85,7 +85,7 @@
     0.1s showBox 4.5s ease forwards reverse;
 }
 
-#text-box, #age {
+#text-box {
   opacity: 0;
   animation: 0.5s showBox 5.2s ease forwards;
 }
