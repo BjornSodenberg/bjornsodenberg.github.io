@@ -1,0 +1,124 @@
+#logo {
+  position: absolute;
+  width: 73.5px;
+  height: 73.5px;
+
+  bottom: 29px;
+  left: 22px;
+}
+#question {
+  position: absolute;
+  top: 24px;
+  left: 22px;
+  color: #fff;
+
+  width: 258px;
+
+  font-family: "Proxima Nova Condensed";
+  font-size: 39px;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+#answer {
+  position: absolute;
+  top: 179px;
+  left: 22px;
+  color: #fff;
+
+  width: 258px;
+
+  font-family: "Proxima Nova Condensed";
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+#shape {
+  width: 433px;
+  height: 470px;
+  position: absolute;
+}
+#age {
+  position: absolute;
+  bottom: 92px;
+  right: 10px;
+  color: #fff;
+
+  font-family: Proxima Nova Condensed;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+#disclaimer {
+  position: absolute;
+  bottom: 28px;
+  right: 10px;
+  width: 155px;
+  color: #fff;
+
+  font-family: "Proxima Nova Condensed";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.01em;
+  text-align: right;
+}
+
+#shape {
+  animation: slideAndBounce 0.5s ease forwards,
+    0.5s slideAndBounce 7s ease forwards reverse;
+}
+#question {
+  opacity: 0;
+  animation: 1s showBox 0.5s ease forwards,
+    0.3s showBox 7s ease forwards reverse;
+}
+#answer {
+  opacity: 0;
+  animation: 0.5s showBox 1.5s ease forwards,
+    0.3s showBox 7s ease forwards reverse;
+}
+#logo {
+  opacity: 0;
+  animation: 0.5s showBox 2.5s ease forwards,
+    0.3s showBox 7s ease forwards reverse;
+}
+#dummy {
+  opacity: 0;
+  animation: dummyAnimation 7s ease forwards;
+}
+
+@keyframes showBox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideAndBounce {
+  0% {
+    transform-origin: top right;
+    top: -470px;
+    right: -250.04px;
+  }
+  100% {
+    top: -180px;
+    right: -100px;
+  }
+}
+
+@keyframes dummyAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

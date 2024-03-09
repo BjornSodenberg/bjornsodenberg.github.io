@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="ad.size" content="width=320,height=100" />
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        position: relative;
+        width: 320px;
+        height: 100px;
+        overflow: hidden;
+      }
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a id="click_area" href="#" target="_blank">
+      <div class="container">
+        <!-- cover -->
+        <img width="320" height="100" src="./cover.png" alt="cover" />
+        <!-- logo -->
+        <img id="logo" src="./logo.svg" alt="logo" />
+
+        <!-- content -->
+        <div class="content">
+          <img id="shape" src="./shape.svg" alt="shape" />
+          <div id="question">Завал с поиском сотрудников?</div>
+          <div id="answer">Помогут умные алгоритмы hh.ru</div>
+        </div>
+
+        <div id="disclaimer">
+          Реклама, ООО "Хэдхантер", ОГРН 1067761906805, 129085, г.Москва, ул.Годовикова, д.9, стр.10. hh.ru не гарантирует подходящих резюме. 
+        </div>
+
+        <div id="age">0+</div>
+        <div id="dummy"></div>
+      </div>
+    </a>
+    <script src="./restart-anim.js"></script>
+  </body>
+</html>
