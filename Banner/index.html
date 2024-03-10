@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="ad.size" content="width=320,height=480" />
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        position: relative;
+        width: 320px;
+        height: 480px;
+        overflow: hidden;
+        background-color: #d6001c;
+      }
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a id="click_area" href="#" target="_blank">
+      <div class="container">
+        <!-- logo -->
+        <img id="logo" src="./logo.svg" alt="logo" />
+
+        <!-- content -->
+        <div class="content">
+          <div id="question">работа ближе</div>
+          <div id="answer">к дому</div>
+          <div class="phone-content" id="phone-content">
+            <img id="phone" src="./phone.png" alt="shape" />
+            <div class="pulse-container">
+              <div class="pulse"></div>
+              <div class="point"></div>
+            </div>
+            <div class="pin-container">
+              <img class="pin" id="pin1" src="./pin.svg" alt="pin" />
+              <img class="pin" id="pin2" src="./pin.svg" alt="pin" />
+              <img class="pin" id="pin3" src="./pin.svg" alt="pin" />
+              <img class="pin" id="pin4" src="./pin.svg" alt="pin" />
+              <img class="pin" id="pin5" src="./pin.svg" alt="pin" />
+              <img class="pin" id="pin6" src="./pin.svg" alt="pin" />
+              <img class="pin" id="pin7" src="./pin.svg" alt="pin" />
+              <img id="pin-big-small" src="./pin-big-small.svg" alt="pin" />
+            </div>
+          </div>
+        </div>
+
+        <div class="plane"></div>
+        <div class="gradient"></div>
+        <div id="screen"></div>
+
+        <div id="disclaimer">
+          Реклама. Поиск работы в городе присутствия соискателя, с помощью
+          мобильного приложения hh.ru. ООО «Хэдхантер» не гарантирует
+          трудоустройства и наличие подходящих вакансий во всех населённых
+          пунктах РФ. Полная информация - на hh.ru. ИНН 7718620740.
+        </div>
+
+        <div id="age">0+</div>
+
+        <div id="dummy"></div>
+      </div>
+    </a>
+    <script src="./restart-anim.js"></script>
+  </body>
+</html>
