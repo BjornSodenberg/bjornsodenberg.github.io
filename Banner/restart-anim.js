@@ -3,11 +3,8 @@ function restartAnimations() {
     document.getElementById("question").style.animation = "none";
     document.getElementById("answer").style.animation = "none";
     document.getElementById("phone-content").style.animation = "none";
-    Array.prototype.map.call(
-      document.getElementsByClassName("pin"),
-      (item) => (item.style.animation = "none")
-    );
-    document.getElementById("pin-big-small").style.animation = "none";
+    document.getElementById("pins-group").style.animation = "none";
+    document.getElementById("big-pin").style.animation = "none";
     document.getElementById("screen").style.animation = "none";
     document.getElementById("logo").style.animation = "none";
     document.getElementById("dummy").style.animation = "none";
@@ -23,13 +20,11 @@ function restartAnimations() {
     document.getElementById("phone-content").style.animation =
       "0.7s showPhone 1s ease forwards, 0.7s showPhone 7s ease forwards reverse";
 
-    Array.prototype.map.call(
-      document.getElementsByClassName("pin"),
-      (item) => (item.style.animation = "pinAnimation 0.3s ease 1.5s forwards")
-    );
+    document.getElementById("pins-group").style.animation =
+      "1s appearFromCenter 1.7s ease forwards;";
 
-    document.getElementById("pin-big-small").style.animation =
-      "pinAnimation 0.3s ease 1.5s forwards, bounce 0.5s ease 2.2s forwards";
+    document.getElementById("big-pin").style.animation =
+      "1s appearFromCenter 1.5s ease forwards, .7s bounce 2.5s ease forwards";
 
     document.getElementById("screen").style.animation =
       "1s showScreen 5s ease forwards, 0.7s showScreen 7.5s ease forwards reverse";
