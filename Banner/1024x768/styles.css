@@ -1,0 +1,135 @@
+#logo {
+  position: absolute;
+  width: 123px;
+  height: 123px;
+
+  top: 64px;
+  left: 61px;
+
+  z-index: 10;
+
+  animation: 0.7s logoScale 5.1s ease forwards,
+    0.7s logoScale 7.5s ease forwards reverse;
+}
+
+#question,
+#answer {
+  position: absolute;
+  top: 307px;
+  left: 61px;
+  color: #fff;
+
+  font-family: Proxima Nova Condensed;
+  font-size: 102px;
+  font-weight: 700;
+  line-height: 97px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  background-color: #d6001c;
+  padding: 0 28px 7px 0px;
+  border-radius: 0 19px 19px 0;
+
+  z-index: 7;
+}
+#answer {
+  top: 392px;
+  left: 61px;
+}
+
+#age {
+  position: absolute;
+  top: 64px;
+  right: 40px;
+  color: #fff;
+
+  font-family: "Proxima Nova Condensed";
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: right;
+
+  z-index: 10;
+}
+#disclaimer {
+  position: absolute;
+  bottom: 54px;
+  left: 61px;
+  width: 428.54px;
+  color: #fff;
+
+  font-family: "Proxima Nova Condensed";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  z-index: 10;
+}
+
+.plane {
+  background: #d6001c;
+  width: 100%;
+  height: 17px;
+
+  position: absolute;
+  bottom: 0px;
+  z-index: 9;
+}
+
+.gradient {
+  position: absolute;
+  background: linear-gradient(360deg, #d6001c 0%, rgba(214, 0, 28, 0) 100%);
+  width: 100%;
+  height: 114px;
+  bottom: 17px;
+  z-index: 9;
+}
+
+#phone-content {
+  left: 466px;
+  top: 78px;
+  transform: translateY(65%);
+  animation: 0.7s showPhone 1s ease forwards,
+    0.7s showPhone 7s ease forwards reverse;
+}
+
+#question,
+#answer {
+  opacity: 0;
+  animation: showBox 0.5s ease forwards, 0.7s showBox 7s ease forwards reverse;
+}
+
+#dummy {
+  opacity: 0;
+  animation: dummyAnimation 7.5s ease forwards;
+}
+
+@keyframes showPhone {
+  0% {
+    transform: translateY(65%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes showBox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dummyAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

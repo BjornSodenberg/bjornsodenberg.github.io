@@ -1,0 +1,106 @@
+/* Geo Location Point */
+.pulse {
+  height: 30px;
+  width: 30px;
+  background-color: #3972ff;
+  position: absolute;
+  left: 192px;
+  top: 476px;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  z-index: 1;
+}
+.pulse:before,
+.pulse:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #3972ff;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.7;
+}
+.pulse:before {
+  animation: pulse 2s ease-out infinite;
+}
+.pulse:after {
+  animation: pulse 2s 1s ease-out infinite;
+}
+
+.point {
+  height: 30px;
+  width: 30px;
+  background-color: #3972ff;
+  position: absolute;
+  left: 192px;
+  top: 476px;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  z-index: 1;
+  box-shadow: 1px 3px 10px #0049ff48;
+}
+
+@keyframes pulse {
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+/* phone */
+
+#phone-content {
+  position: relative;
+  width: 718px;
+  height: 1240px;
+}
+
+#phone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Pins */
+
+#group {
+  z-index: 2;
+  top: 188px;
+  left: 111px;
+  position: absolute;
+  height: 548px;
+  width: 579px;
+  opacity: 0;
+
+  animation: 1s opacity 1.5s ease forwards;
+}
+
+#pin8 {
+  transform-origin: 61px 71px;
+  transform-box: fill-box;
+  -webkit-transform: scale3d(1, 1, 1);
+  animation: 0.7s scale 2.5s ease forwards;
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: scale3d(3.5, 3.5, 1);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

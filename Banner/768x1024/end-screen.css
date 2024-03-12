@@ -1,0 +1,44 @@
+@keyframes logoScale {
+  0% {
+    top: 50px;
+    left: 50px;
+    width: 105px;
+    height: 105px;
+  }
+  100% {
+    width: 210px;
+    height: 210px;
+    top: calc(50% - 105px);
+    left: calc(50% - 105px);
+  }
+}
+
+@keyframes showScreen {
+  0% {
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+  }
+  99% {
+    width: 100%;
+    height: 100%;
+  }
+
+  100% {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: #d6001c;
+  animation: 1s showScreen 5s ease forwards,
+    0.7s showScreen 7.5s ease forwards reverse;
+  z-index: 8;
+}
