@@ -1,28 +1,28 @@
 #logo {
   position: absolute;
-  width: 70px;
-  height: 70px;
-  top: 38px;
-  left: 0px;
+  width: 158px;
+  height: 158px;
+  top: calc(50% - 79px);
+  left: calc(50% - 79px);
 
   z-index: 10;
 
-  animation: 0.7s logoScale 5.1s ease forwards,
-    0.7s logoScale 7.5s ease forwards reverse;
+  animation: 0.7s logoScale 1s ease forwards reverse,
+    0.7s logoScale 15s ease forwards;
 }
 
 @keyframes logoScale {
   0% {
-    top: 38px;
+    top: 30px;
     left: 0px;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
   100% {
-    width: 140px;
-    height: 140px;
-    top: calc(50% - 100px);
-    left: calc(50% - 70px);
+    width: 158px;
+    height: 158px;
+    top: calc(50% - 79px);
+    left: calc(50% - 79px);
   }
 }
 
@@ -30,8 +30,12 @@
   0% {
     width: 0;
     height: 0;
-    border-radius: 100%;
+    border-radius: 0 0 100% 0;
   }
+  50% {
+    height: 100%;
+  }
+
   99% {
     width: 100%;
     height: 100%;
@@ -48,107 +52,67 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 0;
-  height: 0;
+  width: 100%;
+  height: 100%;
   background-color: #d6001c;
-  animation: 1s showScreen 5s ease forwards,
-    0.7s showScreen 7.5s ease forwards reverse;
+  animation: 0.7s showScreen 1s ease forwards reverse,
+    1s showScreen 15s ease forwards;
   z-index: 8;
 }
 
-#question,
-#answer {
+#content-text {
   position: absolute;
-  top: 30px;
-  left: 102px;
+  top: 106px;
+  left: 0px;
   color: #fff;
+  width: 523px;
 
-  font-family: Proxima Nova Condensed;
-  font-size: 74px;
+  font-family: "Proxima Nova Condensed";
+  font-size: 52px;
   font-weight: 700;
-  line-height: 70px;
-  letter-spacing: 0em;
+  line-height: 49.4px;
   text-align: left;
-
-  background-color: #d6001c;
-  padding: 0 12px 7px 0px;
-  border-radius: 0 13px 13px 0;
-
   z-index: 7;
-}
-#answer {
-  top: 92px;
-  left: 102px;
 }
 
 #age {
   position: absolute;
-  top: 27px;
-  right: 0px;
+  bottom: 12px;
+  left: 0px;
   color: #fff;
 
   font-family: "Proxima Nova Condensed";
-  font-size: 27px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 33px;
-  letter-spacing: 0em;
+  line-height: 18.27px;
   text-align: right;
 
-  z-index: 10;
+  /* z-index: 10; */
 }
 #disclaimer {
   position: absolute;
-  bottom: 21px;
-  left: 100px;
-  width: 362px;
+  bottom: 10px;
+  left: 20px;
+  width: 460px;
   color: #fff;
 
   font-family: "Proxima Nova Condensed";
-  font-size: 12px;
+  font-size: 9px;
   font-weight: 400;
-  line-height: 15px;
-  letter-spacing: 0em;
+  line-height: 10.96px;
   text-align: left;
 
-  z-index: 10;
+  /* z-index: 10; */
 }
 
-.plane {
-  background: #d6001c;
-  width: 100%;
-  height: 17px;
-
-  position: absolute;
-  bottom: 0px;
-  z-index: 9;
-}
-
-.gradient {
-  position: absolute;
-  background: linear-gradient(360deg, #d6001c 0%, rgba(214, 0, 28, 0) 100%);
-  width: 100%;
-  height: 114px;
-  bottom: 17px;
-  z-index: 9;
-}
-
-#phone-content {
-  right: 34px;
-  top: -22px;
-  transform: translateY(65%);
-  animation: 0.7s showPhone 1s ease forwards,
-    0.7s showPhone 7s ease forwards reverse;
-}
-
-#question,
-#answer {
+#content-text {
   opacity: 0;
-  animation: showBox 0.5s ease forwards, 0.7s showBox 7s ease forwards reverse;
+  animation: 0.7s showBox 2s ease forwards;
 }
 
 #dummy {
   opacity: 0;
-  animation: dummyAnimation 7.5s ease forwards;
+  animation: dummyAnimation 15s ease forwards;
 }
 
 @keyframes showPhone {
@@ -175,5 +139,56 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+#phone {
+  height: 517px;
+}
+
+#rating-box {
+  position: absolute;
+  top: 100px;
+  opacity: 0;
+  transform: scale3d(0.4, 0.4, 0.4);
+
+  animation: 1s rating-box 4s ease forwards;
+}
+
+@keyframes rating-box {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.4, 0.4, 0.4);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    top: 137px;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+#phone-container {
+  position: relative;
+  width: 313px;
+  height: 487px;
+  right: -453px;
+  top: -38px;
+
+  transform: translateY(65%);
+
+  animation: 0.7s showPhone 3s ease forwards;
+}
+
+@keyframes showPhone {
+  0% {
+    transform: translateY(65%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
