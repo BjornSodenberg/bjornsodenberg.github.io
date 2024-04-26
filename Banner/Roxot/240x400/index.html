@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="ad.size" content="width=240,height=400" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+      * {
+        text-decoration: none;
+      }
+      .wrapper {
+        width: 240px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        background-color: #d4001c;
+        box-sizing: border-box;
+      }
+      .container {
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        background-color: #d6001c;
+        width: 240px;
+        /* margin-left: 34px; */
+      }
+      .content {
+        position: relative;
+      }
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./phone.css" />
+    <script>
+      var clickTag = "%link1%";
+    </script>
+    <script>
+      var tgt = "%banner.target%";
+    </script>
+  </head>
+  <body>
+    <a id="click_area" href="#" target="_blank">
+      <div class="wrapper">
+        <div class="container">
+          <!-- logo -->
+          <img id="logo" src="./logo.svg" alt="logo" />
+
+          <!-- content -->
+          <div class="content">
+            <div id="content-text">работодатели проверены</div>
+            <div id="phone-container">
+              <!-- <img id="rating-box" src="./rating.svg" alt="" /> -->
+              <div id="rating-box" class="rc">
+                <div id="rtng">
+                  <div id="stars">
+                    <img src="./star.svg" alt="" />
+                    <img src="./star.svg" alt="" />
+                    <img src="./star.svg" alt="" />
+                    <img src="./star.svg" alt="" />
+                    <img src="./star-half.svg" alt="" />
+                  </div>
+                  <span id="strs-count">4.7</span>
+                </div>
+                <span id="votes-count">53 отзыва</span>
+              </div>
+              <img id="phone" src="./phone.png" alt="" />
+            </div>
+          </div>
+
+          <div id="screen"></div>
+          <div class="plane"></div>
+          <div class="gradient"></div>
+
+          <div id="disclaimer">
+            Поиск работы в городе присутствия соискателя с помощью мобильного
+            приложения hh.ru. ООО «Хэдхантер» не гарантирует трудоустройства и
+            наличие подходящих вакансий во всех населённых пунктах РФ. Полная
+            информация - на hh.ru.
+          </div>
+
+          <div id="age">0+</div>
+
+          <div id="dummy"></div>
+        </div>
+      </div>
+    </a>
+    <script src="./restart-anim.js"></script>
+    <script>
+      document
+        .getElementById("click_area")
+        .addEventListener("click", fl_ClickToGoToWebPage);
+      function fl_ClickToGoToWebPage() {
+        window.open(clickTag, "_blank");
+      }
+    </script>
+  </body>
+</html>

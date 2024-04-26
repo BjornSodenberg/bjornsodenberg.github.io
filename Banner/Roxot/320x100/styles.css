@@ -1,0 +1,277 @@
+#logo {
+  position: absolute;
+  width: 57.86px;
+  height: 57.86px;
+  top: calc(50% - 28.93px);
+  left: calc(50% - 28.93px);
+
+  z-index: 10;
+
+  animation: 0.7s logoScale 1s ease forwards reverse,
+    0.7s showBox 7s ease forwards reverse, 0.7s logoScale 15s ease forwards;
+}
+
+@keyframes logoScale {
+  0% {
+    opacity: 1;
+    top: 19px;
+    left: 29px;
+    width: 22px;
+    height: 22px;
+  }
+  100% {
+    opacity: 1;
+    width: 57.86px;
+    height: 57.86px;
+    top: calc(50% - 28.93px);
+    left: calc(50% - 28.93px);
+  }
+}
+
+@keyframes showScreen {
+  0% {
+    width: 0;
+    height: 0;
+    border-radius: 0 0 100% 0;
+  }
+  50% {
+    height: 100%;
+  }
+
+  99% {
+    width: 100%;
+    height: 100%;
+  }
+
+  100% {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d6001c;
+  animation: 0.7s showScreen 1s ease forwards reverse,
+    0.7s showScreen 15s ease forwards;
+  z-index: 8;
+}
+
+#content-text {
+  position: absolute;
+  top: 47px;
+  left: 29px;
+  color: #fff;
+  width: 184px;
+
+  font-family: "Proxima Nova Condensed";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 17.1px;
+  text-align: left;
+
+  z-index: 7;
+}
+
+#age {
+  position: absolute;
+  top: 36px;
+  left: 29px;
+  color: #fff;
+
+  font-family: "Proxima Nova Condensed";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12.18px;
+  text-align: right;
+
+  /* z-index: 10; */
+  animation: 0.7s showBox 8s ease forwards;
+  opacity: 0;
+}
+#disclaimer {
+  position: absolute;
+  bottom: 32px;
+  left: 44px;
+  width: 127px;
+  color: #fff;
+
+  font-family: "Proxima Nova Condensed";
+  font-size: 6px;
+  font-weight: 400;
+  line-height: 7.31px;
+  text-align: left;
+
+  z-index: 1;
+
+  animation: 0.7s showBox 8s ease forwards;
+  opacity: 0;
+}
+
+#content-text {
+  opacity: 0;
+  animation: 0.7s showBox 2s ease forwards,
+    0.7s showBox 7s ease forwards reverse;
+}
+
+#dummy {
+  opacity: 0;
+  animation: dummyAnimation 15s ease forwards;
+}
+
+@keyframes showPhone {
+  0% {
+    transform: translateY(65%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes showBox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dummyAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#phone {
+  height: 172px;
+}
+
+#rating-box {
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  opacity: 0;
+  transform: rotate(-9deg) scale(0.4);
+
+  animation: 1s rating-box 4s ease forwards;
+}
+
+@keyframes rating-box {
+  0% {
+    opacity: 0;
+    transform: rotate(-9deg) scale(0.4);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(-9deg) scale(1);
+    opacity: 1;
+    top: 60px;
+  }
+}
+
+#phone-container {
+  position: relative;
+  width: 127px;
+  height: 241px;
+  right: -200px;
+  bottom: 13px;
+
+  transform: translateY(85%);
+
+  animation: 0.7s showPhone 3s ease forwards;
+}
+
+@keyframes showPhone {
+  0% {
+    transform: translateY(85%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.rc {
+  width: 91px;
+  padding: 6px 0px 11px 8px;
+  background: #ffffff;
+  box-shadow: 0px 6.63015px 17.3404px rgba(112, 144, 176, 0.26);
+  border-radius: 11.19px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#rtng {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
+}
+
+#stars > img {
+  width: 15px;
+  height: 15px;
+  margin-right: 2px;
+}
+
+#stars > img:last-child {
+  margin-right: 0;
+}
+
+#strs-count {
+  font-family: "Proxima Nova Condensed";
+  font-weight: 600;
+  font-size: 30.66px;
+  line-height: 42.2px;
+  color: black;
+}
+
+#votes-count {
+  margin-top: 3px;
+  font-family: "Proxima Nova Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.92px;
+  line-height: 15.9px;
+  color: #0070ff;
+}
+
+.plane {
+  background: #d6001c;
+  width: 100%;
+  height: 10px;
+
+  position: absolute;
+  bottom: 0px;
+  z-index: 0;
+}
+
+.gradient {
+  position: absolute;
+  background: linear-gradient(360deg, #d6001c 0%, rgba(214, 0, 28, 0) 100%);
+  width: 100%;
+  height: 38px;
+  bottom: 10px;
+  z-index: 0;
+}
