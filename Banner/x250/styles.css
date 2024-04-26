@@ -148,9 +148,9 @@
 
 #rating-box {
   position: absolute;
-  top: 100px;
+  top: 120px;
   opacity: 0;
-  transform: scale3d(0.4, 0.4, 0.4);
+  transform: rotate(-9deg) scale3d(0.4, 0.4, 0.4);
 
   animation: 1s rating-box 4s ease forwards;
 }
@@ -158,7 +158,7 @@
 @keyframes rating-box {
   0% {
     opacity: 0;
-    transform: scale3d(0.4, 0.4, 0.4);
+    transform: rotate(-9deg) scale3d(0.4, 0.4, 0.4);
   }
 
   10% {
@@ -166,9 +166,9 @@
   }
 
   100% {
+    transform: rotate(-9deg) scale3d(1, 1, 1);
     opacity: 1;
-    top: 137px;
-    transform: scale3d(1, 1, 1);
+    top: 157px;
   }
 }
 
