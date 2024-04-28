@@ -20,16 +20,13 @@ body {
 }
 
 #logo,
-#content-title,
-#content-text,
+.content-title,
+.content-text,
 #age,
 #disclaimer {
   color: #fff;
   position: absolute;
   font-family: "Proxima Nova Condensed";
-
-  opacity: 0;
-  animation: showBox 1s ease forwards;
 }
 
 #logo {
@@ -38,21 +35,49 @@ body {
 
   top: 21px;
   left: 16px;
+
+  opacity: 0;
+  animation: 0.7s rightLeft 0.4s ease forwards;
 }
 
-#content-title {
+.content-title {
   width: 250px;
-
-  top: 102px;
-  left: 29px;
 
   font-size: 38px;
   font-weight: 700;
   line-height: 37.62px;
   text-align: left;
+
+  opacity: 0;
+
+  transform: translate(100%);
 }
 
-#content-text {
+#first-title {
+  top: 102px;
+  left: 29px;
+  animation: 0.7s rightLeft 1.4s ease forwards;
+}
+
+#second-title {
+  top: 140px;
+  left: 29px;
+  animation: 0.7s rightLeft 1.6s ease forwards;
+}
+
+#first-text {
+  top: 192px;
+  left: 29px;
+  animation: 0.7s bottomTop 2.8s ease forwards;
+}
+
+#second-text {
+  top: 210px;
+  left: 29px;
+  animation: 0.7s bottomTop 3s ease forwards;
+}
+
+.content-text {
   width: 196px;
 
   top: 192px;
@@ -62,6 +87,9 @@ body {
   font-weight: 400;
   line-height: 20.79px;
   text-align: left;
+
+  opacity: 0;
+  transform: translate(100%);
 }
 
 #age {
@@ -72,6 +100,12 @@ body {
   font-weight: 400;
   line-height: 16.8px;
   text-align: left;
+
+  opacity: 0;
+
+  transform: translate(100%);
+
+  animation: 0.7s bottomTop 4.5s ease forwards;
 }
 
 #disclaimer {
@@ -84,6 +118,11 @@ body {
   font-weight: 400;
   line-height: 8.4px;
   text-align: left;
+
+  opacity: 0;
+  transform: translate(100%);
+
+  animation: 0.7s bottomTop 4.5s ease forwards;
 }
 
 @keyframes showBox {
@@ -95,9 +134,41 @@ body {
   }
 }
 
+@keyframes rightLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bottomTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #dummy {
   opacity: 0;
-  animation: dummyAnimation 15s ease forwards;
+  animation: dummyAnimation 10s ease forwards;
 }
 
 @keyframes dummyAnimation {

@@ -15,6 +15,9 @@
         display: flex;
         box-sizing: border-box;
         background-image: url("./cover.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
       }
       .container {
         position: relative;
@@ -38,8 +41,10 @@
           <img id="logo" src="./logo.svg" alt="logo" />
           <!-- content -->
           <div class="content">
-            <div id="content-title">выбирайте стабильность</div>
-            <div id="content-text">работодатели проверены на hh.ru</div>
+            <div class="content-title" id="first-title">выбирайте</div>
+            <div class="content-title" id="second-title">стабильность</div>
+            <div class="content-text" id="first-text">работодатели</div>
+            <div class="content-text" id="second-text">проверены на hh.ru</div>
           </div>
 
           <div id="disclaimer">
