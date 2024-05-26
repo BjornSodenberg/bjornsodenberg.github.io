@@ -1,0 +1,125 @@
+#logo,
+#redbox,
+#redbox__container,
+#redbox__title,
+#redbox__name,
+#age,
+#disclaimer {
+  position: absolute;
+  font-family: "Proxima Nova Condensed";
+  color: #fff;
+}
+
+#logo {
+  width: 36px;
+
+  top: 15px;
+  left: 18px;
+}
+
+#redbox {
+  width: 137px;
+  height: 80px;
+
+  top: 63px;
+  left: 18px;
+}
+
+#redbox__container {
+  width: 149px;
+  height: 71px;
+
+  top: 0;
+  right: 0;
+
+  background: #D6001C;
+  border-radius: 10px 0px 10px 10px;
+  
+  animation: slideAndBounce 1s ease forwards,
+    1s slideAndBounce 7s ease forwards reverse;
+}
+
+#redbox__title {
+  top: 8px;
+  left: 11px;
+
+  opacity: 0;
+  animation: 1s showBox 1s ease forwards,
+    0.1s showBox 7.5s ease forwards reverse;
+}
+
+#redbox__name {
+  bottom: 8px;
+  left: 22px;
+
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 8px;
+  letter-spacing: 0.01em;
+  text-align: left;
+
+  opacity: 0;
+  animation: 0.5s showBox 2s ease forwards,
+    0.1s showBox 7.5s ease forwards reverse;
+}
+
+#disclaimer {
+  width: 287px;
+
+  bottom: 5px;
+  left: 18px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#disclaimer__text {
+  width: 268px;
+
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 8px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 0 4px rgba(0, 0, 0, 0.25),
+    0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+#disclaimer__age {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 11px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+#dummy-block {
+  animation: 0.5s showBox 8.5s ease forwards;
+}
+
+@keyframes showBox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideAndBounce {
+  0% {
+    transform-origin: top right;
+    width: 0%;
+    height: 0%;
+  }
+  60% {
+    width: 105%;
+    height: 105%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}

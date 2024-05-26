@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="ad.size" content="width=850,height=250" />
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        position: relative;
+        width: 850px;
+        height: 250px;
+      }
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a id="click_area" href="#" target="_blank">
+      <div class="container">
+        <!-- cover -->
+        <img
+          width="850"
+          height="250"
+          src="https://i.ibb.co/PDCYmHN/850x250-px.jpg"
+          alt="cover"
+        />
+        <!-- logo -->
+        <img id="logo" src="./logo.svg" alt="logo" />
+
+        <div id="redbox">
+          <div id="redbox__container"></div>
+          <img id="redbox__title" src="./redbox-title.svg" alt="redbox-title" />
+          <div id="redbox__name">Елена Пелячева</div>
+        </div>
+
+        <div id="disclaimer">
+          <div id="disclaimer__text">
+            ООО «Хэдхантер» не гарантирует трудоустройства и наличие подходящих
+            вакансий во всех населённых пунктах РФ. Полная информация - на
+            hh.ru. ООО «Хэдхантер», ОГРН 1067761906805, 129085, г. Москва,
+            ул. Годовикова, д. 9, стр. 10
+          </div>
+
+          <div id="disclaimer__age">0+</div>
+        </div>
+
+        <div id="dummy-block"></div>
+      </div>
+    </a>
+    <script>
+      function restartAnimations() {
+        setTimeout(function () {
+          document.getElementById("redbox__container").style.animation = "none";
+          document.getElementById("redbox__title").style.animation = "none";
+          document.getElementById("redbox__name").style.animation = "none";
+          document.getElementById("dummy-block").style.animation = "none";
+
+          void document.body.offsetWidth;
+
+          document.getElementById("redbox__container").style.animation =
+            "slideAndBounce 1s ease forwards, 1s slideAndBounce 7s ease forwards reverse";
+          document.getElementById("redbox__title").style.animation =
+            "1s showBox 1s ease forwards, 0.1s showBox 7.5s ease forwards reverse";
+          document.getElementById("redbox__name").style.animation =
+            "0.5s showBox 2s ease forwards, 0.1s showBox 7.5s ease forwards reverse";
+          document.getElementById("dummy-block").style.animation =
+            "0.5s showBox 8.5s ease forwards";
+        }, 0);
+      }
+
+      document
+        .getElementById("dummy-block")
+        .addEventListener("animationend", restartAnimations);
+    </script>
+    <script>
+      document.getElementById("click_area").href =
+        yandexHTML5BannerApi.getClickURLNum(1);
+    </script>
+  </body>
+</html>
