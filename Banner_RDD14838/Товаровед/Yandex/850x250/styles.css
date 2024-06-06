@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+}
+
+#container {
+  position: relative;
+  width: 850px;
+  height: 250px;
+}
+
+#redbox__title,
+#redbox__name,
+#disclaimer__age,
+#disclaimer,
+#quotation__left,
+#quotation__right {
+  font-family: "Proxima Nova Condensed";
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #fff;
+}
+
+#logo,
+#redbox,
+#redbox__container,
+#redbox__title,
+#redbox__name,
+#disclaimer__age,
+#disclaimer {
+  position: absolute;
+}
+
+#logo {
+  width: 75px;
+  top: 23px;
+  left: 34px;
+}
+
+#redbox {
+  width: 377px;
+  height: 196px;
+  top: 23px;
+  left: 144px;
+}
+
+#redbox__container {
+  top: 0px;
+  right: 0px;
+
+  border-radius: 24px 0px 24px 24px;
+  background-color: #d6001c;
+
+  animation: slideAndBounce 1s ease forwards,
+    1s slideAndBounce 4s ease forwards reverse;
+}
+
+#redbox__title {
+  width: 321px;
+  height: 117px;
+  display: flex;
+  top: 21px;
+  left: 27px;
+  font-size: 43.56px;
+  line-height: 39.2px;
+  opacity: 0;
+
+  animation: 1s showBox 1s ease forwards,
+    0.1s showBox 4.5s ease forwards reverse;
+}
+
+#quotation__left {
+  font-size: 43.56px;
+  line-height: 37.02px;
+  margin-right: 7px;
+}
+
+#quotation__right {
+  font-size: 43.56px;
+  line-height: 37.02px;
+  margin-left: 7px;
+  align-self: flex-end;
+}
+
+#redbox__name {
+  bottom: 21px;
+  left: 55px;
+  font-size: 21.03px;
+  line-height: 24.18px;
+  font-weight: 600;
+  opacity: 0;
+
+  animation: 0.5s showBox 2s ease forwards,
+    0.1s showBox 4.5s ease forwards reverse;
+}
+
+#disclaimer__age {
+  bottom: 24px;
+  right: 26px;
+  font-size: 37.19px;
+  font-weight: 300;
+  line-height: 33.47px;
+  text-align: right;
+}
+
+#disclaimer {
+  width: 382px;
+  top: 40px;
+  left: 144px;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.25);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24.96px;
+  opacity: 0;
+
+  animation: 0.5s showBox 5.2s ease forwards, 0.5s showBox 8s ease forwards reverse;
+}
+
+#dummy {
+  opacity: 0;
+  animation: 0.5s showBox 8s ease forwards;
+}
+
+@keyframes showBox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideAndBounce {
+  0% {
+    transform-origin: top right;
+    width: 0%;
+    height: 0%;
+  }
+  60% {
+    width: 105%;
+    height: 105%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}

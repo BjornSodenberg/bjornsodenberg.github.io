@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+}
+
+#container {
+  position: relative;
+  width: 320px;
+  height: 100px;
+}
+
+#redbox__title,
+#redbox__name,
+#disclaimer__age,
+#disclaimer,
+#quotation__left,
+#quotation__right {
+  font-family: "Proxima Nova Condensed";
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #fff;
+}
+
+#logo,
+#redbox,
+#redbox__container,
+#redbox__title,
+#redbox__name,
+#disclaimer__age,
+#disclaimer {
+  position: absolute;
+}
+
+#logo {
+  width: 31px;
+  top: 13px;
+  left: 13px;
+}
+
+#redbox {
+  width: 140px;
+  height: 74px;
+  top: 13px;
+  left: 61px;
+}
+
+#redbox__container {
+  top: 0px;
+  right: 0px;
+
+  border-radius: 10px 0px 10px 10px;
+  background-color: #d6001c;
+
+  animation: slideAndBounce 1s ease forwards,
+    1s slideAndBounce 4s ease forwards reverse;
+}
+
+#redbox__title {
+  width: 118px;
+  height: 45px;
+  display: flex;
+  top: 8px;
+  left: 10px;
+  font-size: 16px;
+  line-height: 14px;
+  opacity: 0;
+
+  animation: 1s showBox 1s ease forwards,
+    0.1s showBox 4.5s ease forwards reverse;
+}
+
+#quotation__left {
+  font-size: 16px;
+  line-height: 14px;
+  margin-right: 2px;
+}
+
+#quotation__right {
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 2px;
+  align-self: flex-end;
+}
+
+#redbox__name {
+  bottom: 7px;
+  left: 20px;
+  font-size: 8px;
+  font-weight: 600;
+  opacity: 0;
+
+  animation: 0.5s showBox 2s ease forwards,
+    0.1s showBox 4.5s ease forwards reverse;
+}
+
+#disclaimer__age {
+  bottom: 8px;
+  right: 14px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: right;
+}
+
+#disclaimer {
+  width: 167px;
+  top: 13px;
+  left: 61px;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.25);
+  font-size: 9px;
+  font-weight: 400;
+  opacity: 0;
+
+  animation: 0.5s showBox 5.2s ease forwards, 0.5s showBox 8s ease forwards reverse;
+}
+
+#dummy {
+  opacity: 0;
+  animation: 0.5s showBox 8s ease forwards;
+}
+
+@keyframes showBox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideAndBounce {
+  0% {
+    transform-origin: top right;
+    width: 0%;
+    height: 0%;
+  }
+  60% {
+    width: 105%;
+    height: 105%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}

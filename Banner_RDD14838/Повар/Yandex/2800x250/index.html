@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="ad.size" content="width=2500,height=250" />
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
+    <style></style>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a id="click_area" href="#" target="_blank">
+      <div id="wrapper">
+      <div id="container">
+          <img id="logo" src="./logo.svg" alt="logo" />
+          
+          <div id="redbox">
+            <div id="redbox__container"></div>
+            <div id="redbox__title">
+              <span id="quotation__left">«</span>ищите работу поваром
+              на hh.ru »
+            </div>
+            <div id="redbox__name">Гульнара Курбанова</div>
+          </div>
+
+          <div id="disclaimer">
+            ООО «Хэдхантер» не гарантирует трудоустройства и наличие подходящих
+            вакансий во всех населённых пунктах РФ. Полная информация - на
+            hh.ru. ООО «Хэдхантер», ОГРН 1067761906805, 129085, г. Москва,
+            ул. Годовикова, д. 9, стр. 10
+          </div>
+
+          <div id="disclaimer__age">0+</div>
+          <div id="dummy"></div>
+        </div>
+      </div>
+    </a>
+    <script>
+      function restartAnimations() {
+        setTimeout(function () {
+          document.getElementById("redbox__container").style.animation = "none";
+          document.getElementById("redbox__title").style.animation = "none";
+          document.getElementById("redbox__name").style.animation = "none";
+          document.getElementById("disclaimer").style.animation = "none";
+          document.getElementById("dummy").style.animation = "none";
+
+          void document.body.offsetWidth;
+
+          document.getElementById("redbox__container").style.animation =
+            "slideAndBounce 1s ease forwards, 1s slideAndBounce 4s ease forwards reverse";
+          document.getElementById("redbox__title").style.animation =
+            "1s showBox 1s ease forwards, 0.1s showBox 4.5s ease forwards reverse";
+          document.getElementById("redbox__name").style.animation =
+            "0.5s showBox 2s ease forwards, 0.1s showBox 4.5s ease forwards reverse";
+          document.getElementById("disclaimer").style.animation =
+            "0.5s showBox 5.2s ease forwards, 0.5s showBox 8s ease forwards reverse";
+          document.getElementById("dummy").style.animation =
+            "0.5s showBox 8s ease forwards";
+        }, 0);
+      }
+
+      document
+        .getElementById("dummy")
+        .addEventListener("animationend", restartAnimations);
+    </script>
+    <script>
+      document.getElementById("click_area").href =
+        yandexHTML5BannerApi.getClickURLNum(1);
+    </script>
+  </body>
+</html>
