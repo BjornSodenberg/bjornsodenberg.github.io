@@ -4,15 +4,15 @@
   height: 97px;
 
   bottom: 29px;
-  right: 154px;
+  right: 0px;
 }
 #question {
   position: absolute;
-  top: 26px;
-  left: 76px;
+  top: 20px;
+  left: 60px;
   color: #fff;
 
-  width: 422px;
+  width: 490px;
 
   font-family: "Proxima Nova Condensed";
   font-size: 48.89px;
@@ -24,10 +24,10 @@
 #answer {
   position: absolute;
   top: 133px;
-  left: 76px;
+  left: 60px;
   color: #fff;
 
-  width: 350px;
+  width: 340px;
 
   font-family: "Proxima Nova Condensed";
   font-size: 48.89px;
@@ -38,13 +38,13 @@
 }
 #shape {
   position: absolute;
-  width: 606px;
-  height: 551px;
+  width: 630px;
+  height: 530px;
 }
 #age {
   position: absolute;
   top: 35px;
-  right: 163px;
+  right: 0;
   color: #fff;
 
   font-family: "Proxima Nova Condensed";
@@ -52,13 +52,13 @@
   font-weight: 400;
   line-height: 31.11px;
   letter-spacing: 0.01em;
-  text-align: left;  
+  text-align: left;
 }
 #disclaimer {
   position: absolute;
   bottom: 19px;
-  left: 155px;
-  width: 375px;
+  left: 0px;
+  width: 435px;
   color: #fff;
 
   font-family: "Proxima Nova Condensed";
@@ -105,7 +105,7 @@
 @keyframes slideAndBounce {
   0% {
     transform-origin: top right;
-    top: -551px;
+    top: -550px;
     left: 100.38px;
   }
   100% {
