@@ -102,11 +102,11 @@ body {
 }
 
 #disclaimer {
-  width: 167px;
+  width: 155px;
   top: 13px;
   left: 61px;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.25);
-  font-size: 9px;
+  font-size: 8px;
   font-weight: 400;
   opacity: 0;
 
