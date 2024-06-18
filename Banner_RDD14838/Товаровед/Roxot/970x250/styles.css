@@ -103,8 +103,8 @@ body {
 }
 
 #disclaimer {
-  width: 405px;
-  top: 30px;
+  width: 385px;
+  bottom: 30px;
   left: 40px;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.25);
   font-size: 20px;
