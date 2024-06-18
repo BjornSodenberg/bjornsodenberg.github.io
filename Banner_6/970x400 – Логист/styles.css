@@ -1,0 +1,124 @@
+#logo {
+  position: absolute;
+  width: 97px;
+  height: 97px;
+
+  bottom: 29px;
+  right: 154px;
+}
+#question {
+  position: absolute;
+  top: 26px;
+  left: 76px;
+  color: #fff;
+
+  width: 422px;
+
+  font-family: "Proxima Nova Condensed";
+  font-size: 48.89px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+#answer {
+  position: absolute;
+  top: 133px;
+  left: 76px;
+  color: #fff;
+
+  width: 350px;
+
+  font-family: "Proxima Nova Condensed";
+  font-size: 48.89px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+#shape {
+  position: absolute;
+  width: 606px;
+  height: 551px;
+}
+#age {
+  position: absolute;
+  top: 35px;
+  right: 163px;
+  color: #fff;
+
+  font-family: "Proxima Nova Condensed";
+  font-size: 31.11px;
+  font-weight: 400;
+  line-height: 31.11px;
+  letter-spacing: 0.01em;
+  text-align: left;  
+}
+#disclaimer {
+  position: absolute;
+  bottom: 19px;
+  left: 155px;
+  width: 375px;
+  color: #fff;
+
+  font-family: "Proxima Nova Condensed";
+  font-size: 17.78px;
+  font-weight: 400;
+  line-height: 17.78px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+#shape {
+  animation: slideAndBounce 0.5s ease forwards,
+    0.5s slideAndBounce 7s ease forwards reverse;
+}
+#question {
+  opacity: 0;
+  animation: 1s showBox 0.5s ease forwards,
+    0.3s showBox 7s ease forwards reverse;
+}
+#answer {
+  opacity: 0;
+  animation: 0.5s showBox 1.5s ease forwards,
+    0.3s showBox 7s ease forwards reverse;
+}
+#logo {
+  opacity: 0;
+  animation: 0.5s showBox 2.5s ease forwards,
+    0.3s showBox 7s ease forwards reverse;
+}
+#dummy {
+  opacity: 0;
+  animation: dummyAnimation 7s ease forwards;
+}
+
+@keyframes showBox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideAndBounce {
+  0% {
+    transform-origin: top right;
+    top: -551px;
+    left: 100.38px;
+  }
+  100% {
+    top: -254px;
+    left: -2px;
+  }
+}
+
+@keyframes dummyAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
